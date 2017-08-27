@@ -1,0 +1,1889 @@
+body {
+	margin: 0;
+	background-color: black;
+	cursor: default;
+	font-family: Roboto, sans-serif;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(41, 46, 51, 1.0);
+}
+
+a {
+	cursor: pointer;
+	color: rgba(0, 229, 218, 1.0);
+	text-decoration: none;
+}
+
+.funtime {
+	display: block;
+	position: relative;
+	bottom: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(33, 35, 38, 1.0);
+	background-image: url("images/iris-2_mood_5a_4_small_endo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: initial;
+	background-position: center center;
+	overflow: hidden;
+	z-index: 1011 !important;
+}
+
+.background {
+	display: block;
+	height: calc(100vh + 60px);
+	width: 100vw;
+	position: fixed;
+	background-color: rgba(41, 46, 51, 1.0);
+	pointer-events: none;
+	z-index: -100;
+}
+
+.intro {
+	display: block;
+	height: 60vh;
+	padding: 2vmax 2vmax 2vmax 2vmax;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	/*background-image: url("images/the_continuous_life_by_endosage-d89nmiz.jpg");*/
+	background-image: url("images/z-tower_2.jpg");
+	/*background-image: url("images/me-a.JPG");*/
+	/*background-image: url("images/me-b.JPG");*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: initial !important;
+	background-position: 50% 40% !important;
+	z-index: 1011 !important;
+	overflow: hidden;
+}
+
+.header {
+	display: block;
+	width: calc(100vw - 4vmax);
+	padding: 2vmax 2vmax 2vmax 2vmax;
+	font-weight: 500;
+	background-color: rgba(56, 61, 66, .85);  /*background-color: rgba(0, 191, 96, .90);*/
+	position: fixed;
+	z-index: 1000;
+	top: 0px;
+	border-top: solid 60px rgba(105, 221, 158, 1.0);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
+	transform: translate(0px, -60px);
+	-webkit-transform: translate(0px, -60px);
+	-moz-transform: translate(0px, -60px);
+}
+
+.intro-copy {
+	display: block;
+	width: 96vmax;
+	padding: 2vmax 0vmax 2vmax 0vmax;
+	background-color: rgba(0, 128, 0, .0);
+	position: fixed;
+	top: 14vmax;
+	pointer-events: none;
+	text-shadow: 0px 0px 30px rgba(0,0,0,.4);
+}
+
+.intro-name {
+	display: block;
+	background-color: transparent;
+	color: white;
+	z-index: 1010 !important;
+	font-size: 8vmax;
+	font-weight: 500;
+	line-height: 2.3vmax;
+	position: relative;
+	margin-left: 2vmax;
+	pointer-events: none;
+}
+
+.intro-intro {
+	display: block;
+	background-color: transparent;
+	color: white;
+	z-index: 1010 !important;
+	font-size: 2vmax;
+	font-weight: 500;
+	line-height: 2.3vmax;
+	position: relative;
+	top: 3vmax;
+	width: 75vw;
+	margin-left: 2.4vmax;
+	pointer-events: none;
+}
+
+.outro-copy {
+	display: block;
+	width: 100vw;
+	background-color: rgba(0, 128, 0, .0);
+	position: relative;
+	z-index: 1013 !important;
+	top: 40vh;
+}
+
+.outro-l {
+	display: block;
+	background-color: transparent;
+	color: white;
+	z-index: 1010 !important;
+	font-size: 8vmax;
+	font-weight: 500;
+	position: relative;
+	text-shadow: 0px 0px 30px rgba(0, 0, 0, 1) !important;
+	width: 100vw !important;
+	pointer-events: auto !important;
+	text-align: center !important;
+}
+
+.outro-s a {
+	display: inline-block;
+	background-color: rgba(0, 229, 218, 1.0);
+	color: black !important;
+	z-index: 1010 !important;
+	font-size: 2vmax !important;
+	font-weight: 500;
+	line-height: 2.3vmax !important;
+	position: relative;
+	top: 3vmax;
+	left: calc(50% - 15px);
+	margin-left: -250px;
+	width: 500px;
+	padding: 15px;
+	pointer-events: auto !important;
+	text-align: center !important;
+	border-radius: 6px !important;
+}
+
+.header-mark {
+	display: inline-block;
+	background-color: transparent;
+	width: 2.2vmax;
+	height: 2.05vmax;
+	z-index: 1010 !important;
+}
+
+.intro-mark {
+	display: inline-block;
+	background-color: transparent;
+	position: fixed;
+	top: 2vmax;
+	left: 2vmax;
+	width: 2.2vmax;
+	height: 2.05vmax;
+	z-index: 1012 !important;
+}
+
+#endo-logo {
+	/*fill: rgba(255, 255, 255, 1.0);*/  fill: rgba(105, 221, 158, 1.0);
+}
+
+.sectionpadder {
+	display: block;
+	padding: 10vmax 4vmax 4vmax 4vmax;
+	background-color: rgba(41, 46, 51, 1.0);
+	pointer-events: none;
+	z-index: 1014 !important;
+}
+
+.sectiontitle {
+	display: block;
+	background-color: transparent;
+	color: rgba(41, 46, 51, 1.0);
+	margin-left: 1.5vmax;
+	font-size: 2.4vmax;
+	letter-spacing: .2vmax;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.grid-item {
+	pointer-events: auto !important;
+}
+
+@media (min-width: 0px) and (max-width: 540px) and (min-resolution: 1dppx), (min-width: 0px) and (max-width: 540px) and (-webkit-min-device-pixel-ratio: 1) {
+
+	.intro-copy {
+		display: block;
+		width: 96vmax;
+		padding: 2vmax 0vmax 2vmax 0vmax;
+		background-color: rgba(0, 128, 0, .0);
+		position: relative !important;
+		top: 14vmax;
+		pointer-events: none;
+		text-shadow: 0px 0px 30px rgba(0,0,0,.4);
+	}
+
+	.grid-item {
+		display: inline-block;
+	  	width: 100%;
+		height: 32vmax;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 3.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .8vmax;
+		vertical-align: top;
+		line-height: 3.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.8vmax;
+	  	letter-spacing: .1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 2.4vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 4.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1.5vmax;
+		font-size: 3.8vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 4.3vmax;
+		position: absolute;
+		right: 3.5vw;
+		font-size: 3.8vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1012 !important;
+	}
+
+	.intro-intro {
+	  display: block;
+	  background-color: transparent;
+	  color: white;
+	  z-index: 1010 !important;
+	  font-size: 3.5vmax;
+	  font-weight: 500;
+	  line-height: 4.2vmax;
+	  position: relative;
+	  top: 3vmax;
+	  width: 75vw;
+	  margin-left: 2.4vmax;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 2.8vmax !important;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+		left: calc(50% - 15px);
+		margin-left: -125px;
+		width: 250px !important;
+	}
+
+	.intro {
+		display: block;
+		background-image: url("images/me-a.JPG") !important;
+		height: calc(100vh - 90px);
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center top;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+
+}
+
+@media (min-width: 541px) and (max-width: 949px) and (min-resolution: 1dppx), (min-width: 541px) and (max-width: 949px) and (-webkit-min-device-pixel-ratio: 1) {
+	.intro-copy {
+		display: block;
+		width: 96vmax;
+		padding: 2vmax 0vmax 2vmax 0vmax;
+		background-color: rgba(0, 128, 0, .0);
+		position: relative !important;
+		top: 14vmax;
+		pointer-events: none;
+		text-shadow: 0px 0px 30px rgba(0,0,0,.4);
+	}
+
+	.grid-item {
+		display: inline-block;
+	  	width: 50%;
+		min-height: 28vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 3.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .8vmax;
+		vertical-align: top;
+		line-height: 3.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.8vmax;
+	  	letter-spacing: .1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 2.4vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 4.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1.5vmax;
+		font-size: 3.8vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 4.3vmax;
+		position: absolute;
+		right: 3.5vw;
+		font-size: 3.8vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1012 !important;
+	}
+
+	.intro-intro {
+	  display: block;
+	  background-color: transparent;
+	  color: white;
+	  z-index: 1010 !important;
+	  font-size: 3.5vmax;
+	  font-weight: 500;
+	  line-height: 4.2vmax;
+	  position: relative;
+	  top: 3vmax;
+	  width: 75vw;
+	  margin-left: 2.4vmax;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 2.8vmax !important;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+		left: calc(50% - 15px);
+		margin-left: -125px;
+		width: 250px !important;
+	}
+
+	.outro-copy {
+		top: 35vh !important;
+	}
+
+	.intro {
+		display: block;
+		height: calc(100vh - 90px);
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+
+}
+
+@media (min-width: 950px) and (max-width: 1399px) and (min-resolution: 1dppx), (min-width: 950px) and (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1) {
+	.intro-copy {
+		display: block;
+		width: 96vmax;
+		padding: 2vmax 0vmax 2vmax 0vmax;
+		background-color: rgba(0, 128, 0, .0);
+		position: relative !important;
+		top: 14vmax;
+		pointer-events: none;
+		text-shadow: 0px 0px 30px rgba(0,0,0,.4);
+	}
+
+	.grid-item {
+		display: inline-block;
+	  	width: 33.33%;
+		height: 25vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.6vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .4vmax;
+		vertical-align: top;
+		line-height: 1.8vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 1.2vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 2.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1vmax;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1012 !important;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 3.5vmax;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+	}
+
+	.intro {
+		display: block;
+		min-height: 60vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.intro-copy {
+		top: 28% !important;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+}
+
+@media (min-width: 1400px) and (min-resolution: 1dppx), (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
+	.intro-copy {
+		display: block;
+		width: 96vmax;
+		padding: 2vmax 0vmax 2vmax 0vmax;
+		background-color: rgba(0, 128, 0, .0);
+		position: relative !important;
+		top: 14vmax;
+		pointer-events: none;
+		text-shadow: 0px 0px 30px rgba(0,0,0,.4);
+	}
+
+	.grid-item {
+		display: inline-block;
+	  	width: calc(25vmax - 2vmax);
+		height: 22vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.6vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .4vmax;
+		vertical-align: top;
+		line-height: 1.8vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 1.2vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 2.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1vmax;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1012 !important;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 3.5vmax;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+	}
+
+	.intro {
+		display: block;
+		min-height: 60vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 540px) and (min-resolution: 2dppx), (min-width: 0px) and (max-width: 540px) and (-webkit-min-device-pixel-ratio: 2) {
+	.grid-item {
+		display: inline-block;
+	  	width: 100%;
+		height: 32vmax;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 3.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .8vmax;
+		vertical-align: top;
+		line-height: 3.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.8vmax;
+	  	letter-spacing: .1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 2.4vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 4.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1.5vmax;
+		font-size: 3.8vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 4.3vmax;
+		position: absolute;
+		right: 3.5vw;
+		font-size: 3.8vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1012 !important;
+	}
+
+	.intro-intro {
+	  display: block;
+	  background-color: transparent;
+	  color: white;
+	  z-index: 1010 !important;
+	  font-size: 3.5vmax;
+	  font-weight: 500;
+	  line-height: 4.2vmax;
+	  position: relative;
+	  top: 3vmax;
+	  width: 75vw;
+	  margin-left: 2.4vmax;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 2.8vmax !important;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+		left: calc(50% - 15px);
+		margin-left: -125px;
+		width: 250px !important;
+	}
+
+	.intro {
+		display: block;
+		background-image: url("images/me-a.JPG") !important;
+		height: calc(100vh - 90px);
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center top;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+
+}
+
+@media (min-width: 541px) and (max-width: 949px) and (min-resolution: 2dppx), (min-width: 541px) and (max-width: 949px) and (-webkit-min-device-pixel-ratio: 2) {
+	.grid-item {
+		display: inline-block;
+	  	width: 50%;
+		min-height: 28vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 3.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .8vmax;
+		vertical-align: top;
+		line-height: 3.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.8vmax;
+	  	letter-spacing: .1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 2.4vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 4.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1.5vmax;
+		font-size: 3.8vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 4.3vmax;
+		position: absolute;
+		right: 3.5vw;
+		font-size: 3.8vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1012 !important;
+	}
+
+	.intro-intro {
+	  display: block;
+	  background-color: transparent;
+	  color: white;
+	  z-index: 1010 !important;
+	  font-size: 3.5vmax;
+	  font-weight: 500;
+	  line-height: 4.2vmax;
+	  position: relative;
+	  top: 3vmax;
+	  width: 75vw;
+	  margin-left: 2.4vmax;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 2.8vmax !important;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+		left: calc(50% - 15px);
+		margin-left: -125px;
+		width: 250px !important;
+	}
+
+	.outro-copy {
+		top: 35vh !important;
+	}
+
+	.intro {
+		display: block;
+		height: calc(100vh - 90px);
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+
+}
+
+@media (min-width: 950px) and (max-width: 1399px) and (min-resolution: 2dppx), (min-width: 950px) and (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 2) {
+	.grid-item {
+		display: inline-block;
+	  	width: 33.33%;
+		height: 25vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.6vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .4vmax;
+		vertical-align: top;
+		line-height: 1.8vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 1.2vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 2.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1vmax;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1012 !important;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 3.5vmax;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+	}
+
+	.intro {
+		display: block;
+		min-height: 60vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.intro-copy {
+		top: 28% !important;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+}
+
+@media (min-width: 1400px) and (min-resolution: 2dppx), (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2) {
+	.grid-item {
+		display: inline-block;
+	  	width: calc(25vmax - 2vmax);
+		height: 22vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.6vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .4vmax;
+		vertical-align: top;
+		line-height: 1.8vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 1.2vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 2.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1vmax;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1012 !important;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 3.5vmax;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+	}
+
+	.intro {
+		display: block;
+		min-height: 60vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 540px) and (min-resolution: 3dppx), (min-width: 0px) and (max-width: 540px) and (-webkit-min-device-pixel-ratio: 3) {
+	.grid-item {
+		display: inline-block;
+	  	width: 100%;
+		height: 32vmax;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 3.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .8vmax;
+		vertical-align: top;
+		line-height: 3.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.8vmax;
+	  	letter-spacing: .1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 2.4vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 4.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1.5vmax;
+		font-size: 3.8vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 4.3vmax;
+		position: absolute;
+		right: 3.5vw;
+		font-size: 3.8vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1012 !important;
+	}
+
+	.intro-intro {
+	  display: block;
+	  background-color: transparent;
+	  color: white;
+	  z-index: 1010 !important;
+	  font-size: 3.5vmax;
+	  font-weight: 500;
+	  line-height: 4.2vmax;
+	  position: relative;
+	  top: 3vmax;
+	  width: 75vw;
+	  margin-left: 2.4vmax;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 2.8vmax !important;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+		left: calc(50% - 15px);
+		margin-left: -125px;
+		width: 250px !important;
+	}
+
+	.intro {
+		display: block;
+		background-image: url("images/me-a.JPG") !important;
+		height: 100vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+
+}
+
+@media (min-width: 541px) and (max-width: 949px) and (min-resolution: 3dppx), (min-width: 541px) and (max-width: 949px) and (-webkit-min-device-pixel-ratio: 3) {
+	.grid-item {
+		display: inline-block;
+	  	width: 50%;
+		height: 28vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 3.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .8vmax;
+		vertical-align: top;
+		line-height: 3.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.8vmax;
+	  	letter-spacing: .1vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 2.4vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 4.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1.5vmax;
+		font-size: 3.8vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 4.3vmax;
+		position: absolute;
+		right: 3.5vw;
+		font-size: 3.8vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 4.4vmax;
+		height: 4.1vmax;
+		z-index: 1012 !important;
+	}
+
+	.intro-intro {
+	  display: block;
+	  background-color: transparent;
+	  color: white;
+	  z-index: 1010 !important;
+	  font-size: 3.5vmax;
+	  font-weight: 500;
+	  line-height: 4.2vmax;
+	  position: relative;
+	  top: 3vmax;
+	  width: 75vw;
+	  margin-left: 2.4vmax;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 2.8vmax !important;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+		left: calc(50% - 15px);
+		margin-left: -125px;
+		width: 250px !important;
+	}
+
+	.outro-copy {
+		top: 35vh !important;
+	}
+
+	.intro {
+		display: block;
+		height: 100vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		background-position: center top;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+
+}
+
+@media (min-width: 950px) and (max-width: 1399px) and (min-resolution: 3dppx), (min-width: 950px) and (-webkit-min-device-pixel-ratio: 3) {
+	.grid-item {
+		display: inline-block;
+	  	width: 33.33%;
+		height: 25vmax;
+		margin: 0vmax -4px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 2.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .4vmax;
+		vertical-align: top;
+		line-height: 2.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.2vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 1.5vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 2.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1vmax;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1012 !important;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 3.5vmax;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+	}
+
+	.intro {
+		display: block;
+		min-height: 60vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.intro-copy {
+		top: 28% !important;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+}
+
+@media (min-width: 1400px) and (min-resolution: 3dppx), (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 3) {
+	.grid-item {
+		display: inline-block;
+	  	width: calc(25vmax - 2vmax);
+		height: 22vmax;
+		margin: 0vmax -.25px 2vmax 0vmax;
+		padding: 0px;
+		border-bottom: solid 2px rgba(105, 221, 158, 1.0);
+		background-color: transparent;
+		box-shadow: inset 0px 0px 30vmax rgba(0, 0, 0, .8);
+		-webkit-box-shadow: inset 0px 0px 5vmax rgba(0, 0, 0, .8);
+		position: relative;
+		overflow: hidden;
+		vertical-align: top;
+	}
+
+	.project-title {
+		display: block;
+		color: white;
+		font-family: Roboto, sans-serif;
+	  	font-size: 2.2vmax;
+	  	font-weight: 500;
+	  	padding-bottom: .4vmax;
+		vertical-align: top;
+		line-height: 2.5vmax;
+		text-shadow: 0px 0px 15px rgba(0,0,0,.45);
+		pointer-events: auto;
+	}
+
+	.project-detail {
+		display: block;
+		color: rgba(105, 221, 158, 1.0);
+		font-family: Roboto, sans-serif;
+	  	font-size: 1.2vmax;
+	  	font-weight: 500;
+	  	text-transform: uppercase;
+	  	line-height: 1.5vmax;
+	  	text-shadow: 0px 0px 8px rgba(0,0,0,.75);
+	  	pointer-events: auto;
+	}
+
+	.header-name {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		height: 2.05vmax;
+		line-height: 2.3vmax;
+		position: relative;
+		vertical-align: top;
+		margin-left: 1vmax;
+		font-size: 1.5vmax;
+	}
+
+	.header-contact {
+		display: inline-block;
+		background-color: transparent;
+		color: white;
+		z-index: 1010 !important;
+		line-height: 2.3vmax;
+		position: absolute;
+		vertical-align: top;
+		right: 3.5vw;
+		font-size: 1.5vmax;
+	}
+
+	.header-mark {
+		display: inline-block;
+		background-color: transparent;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1010 !important;
+	}
+
+	.intro-mark {
+		display: inline-block;
+		background-color: transparent;
+		position: fixed;
+		top: 2vmax;
+		left: 2vmax;
+		width: 2.2vmax;
+		height: 2.05vmax;
+		z-index: 1012 !important;
+	}
+
+	.outro-s a {
+		display: inline-block;
+		background-color: rgba(0, 229, 218, 1.0);
+		color: white;
+		z-index: 1010 !important;
+		font-size: 3.5vmax;
+		font-weight: 500;
+		line-height: 2.3vmax;
+		position: relative;
+	}
+
+	.intro {
+		display: block;
+		min-height: 60vh;
+		padding: 2vmax 2vmax 2vmax 2vmax;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		z-index: 1011 !important;
+		overflow: hidden;
+	}
+
+	.sectionheader {
+		display: inline-block;
+		width: 100%;
+		margin: 0vmax 0vmax 2vmax 0vmax;
+		padding: 1.2vmax 0vmax 1vmax 0vmax;
+		background-color: rgba(105, 221, 158, 1.0);
+		margin-bottom: 4vmax;
+	}
+}
+
+.shadowbox {
+	display: block;
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	box-shadow: inset 0 -3vmax 5vmax rgba(0, 0, 0, .8);
+	-webkit-box-shadow: inset 0 -3vmax 5vmax rgba(0, 0, 0, .8);
+}
+
+.item-info {
+	display: block;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,.8))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,.8) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,.8) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,.8) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,.8) 100%); /* W3C */
+	background-color: rgba(0,0,0, 0.4);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	padding: 2vmax;
+	overflow: hidden;
+	margin-top: -2px;
+}
